@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\CheapFlights.WebAPI.props" />
+</Project>

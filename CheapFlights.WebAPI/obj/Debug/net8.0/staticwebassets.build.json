@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "8YgezzypLYB+j14IbWngAT2c/E/5e8BMHmaKNSRIX5s=",
+  "Source": "CheapFlights.WebAPI",
+  "BasePath": "_content/CheapFlights.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

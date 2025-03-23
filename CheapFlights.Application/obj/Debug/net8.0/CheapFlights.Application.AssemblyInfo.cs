@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CheapFlights.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07dccd0b2af1aab80738c77e55eaf74390f75c69")]
 [assembly: System.Reflection.AssemblyProductAttribute("CheapFlights.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CheapFlights.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

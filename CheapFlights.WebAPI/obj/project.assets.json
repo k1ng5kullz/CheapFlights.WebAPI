@@ -99,11 +99,24 @@
       "CheapFlights.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "CheapFlights.Domain": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/CheapFlights.Application.dll": {}
         },
         "runtime": {
           "bin/placeholder/CheapFlights.Application.dll": {}
+        }
+      },
+      "CheapFlights.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/CheapFlights.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CheapFlights.Domain.dll": {}
         }
       }
     }
@@ -541,6 +554,11 @@
       "type": "project",
       "path": "../CheapFlights.Application/CheapFlights.Application.csproj",
       "msbuildProject": "../CheapFlights.Application/CheapFlights.Application.csproj"
+    },
+    "CheapFlights.Domain/1.0.0": {
+      "type": "project",
+      "path": "../CheapFlights.Domain/CheapFlights.Domain.csproj",
+      "msbuildProject": "../CheapFlights.Domain/CheapFlights.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {

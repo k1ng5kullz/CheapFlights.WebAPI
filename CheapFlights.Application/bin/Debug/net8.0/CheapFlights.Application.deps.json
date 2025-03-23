@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "CheapFlights.Application/1.0.0": {
+        "dependencies": {
+          "CheapFlights.Domain": "1.0.0"
+        },
+        "runtime": {
+          "CheapFlights.Application.dll": {}
+        }
+      },
+      "CheapFlights.Domain/1.0.0": {
+        "runtime": {
+          "CheapFlights.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CheapFlights.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CheapFlights.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

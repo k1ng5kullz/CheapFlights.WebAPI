@@ -1,6 +1,26 @@
 @CheapFlights.WebAPI_HostAddress = http://localhost:5245
 
-GET {{CheapFlights.WebAPI_HostAddress}}/weatherforecast/
-Accept: application/json
+
+@bookingId=string
+@contactEmail=string
+GET {{CheapFlights.WebAPI_HostAddress}}/api/flights?bookingId={{bookingId}}&contactEmail={{contactEmail}}
+
+###
+
+POST {{CheapFlights.WebAPI_HostAddress}}/api/flights
+Content-Type: application/json
+
+{
+  //BookingRequest
+}
+
+###
+
+POST {{CheapFlights.WebAPI_HostAddress}}/api/flights
+Content-Type: application/json
+
+{
+  //FlightRequest
+}
 
 ###

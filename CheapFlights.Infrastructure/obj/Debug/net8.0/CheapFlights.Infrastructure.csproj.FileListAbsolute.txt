@@ -1,0 +1,11 @@
+C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Infrastructure\bin\Debug\net8.0\CheapFlights.Infrastructure.deps.json
+C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Infrastructure\bin\Debug\net8.0\CheapFlights.Infrastructure.dll
+C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Infrastructure\bin\Debug\net8.0\CheapFlights.Infrastructure.pdb
+C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Infrastructure\obj\Debug\net8.0\CheapFlights.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Infrastructure\obj\Debug\net8.0\CheapFlights.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Infrastructure\obj\Debug\net8.0\CheapFlights.Infrastructure.AssemblyInfo.cs
+C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Infrastructure\obj\Debug\net8.0\CheapFlights.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Infrastructure\obj\Debug\net8.0\CheapFlights.Infrastructure.dll
+C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Infrastructure\obj\Debug\net8.0\refint\CheapFlights.Infrastructure.dll
+C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Infrastructure\obj\Debug\net8.0\CheapFlights.Infrastructure.pdb
+C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Infrastructure\obj\Debug\net8.0\ref\CheapFlights.Infrastructure.dll

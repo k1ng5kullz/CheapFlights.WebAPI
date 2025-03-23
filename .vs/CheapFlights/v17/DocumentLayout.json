@@ -3,32 +3,88 @@
   "WorkspaceRootPath": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{252CC083-01DF-4A1C-ABD0-28B6F228E4C9}|CheapFlights.Application\\CheapFlights.Application.csproj|c:\\users\\andre\\source\\repos\\cheapflights.webapi\\cheapflights.application\\implementation\\flightservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{252CC083-01DF-4A1C-ABD0-28B6F228E4C9}|CheapFlights.Application\\CheapFlights.Application.csproj|solutionrelative:cheapflights.application\\implementation\\flightservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BF72AE37-5034-4AA4-ACD1-1675D02C13F4}|CheapFlights.WebAPI\\CheapFlights.WebAPI.csproj|c:\\users\\andre\\source\\repos\\cheapflights.webapi\\cheapflights.webapi\\controllers\\flightscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF72AE37-5034-4AA4-ACD1-1675D02C13F4}|CheapFlights.WebAPI\\CheapFlights.WebAPI.csproj|solutionrelative:cheapflights.webapi\\controllers\\flightscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{252CC083-01DF-4A1C-ABD0-28B6F228E4C9}|CheapFlights.Application\\CheapFlights.Application.csproj|c:\\users\\andre\\source\\repos\\cheapflights.webapi\\cheapflights.application\\contracts\\iflightservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{252CC083-01DF-4A1C-ABD0-28B6F228E4C9}|CheapFlights.Application\\CheapFlights.Application.csproj|solutionrelative:cheapflights.application\\contracts\\iflightservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CBAEC0A5-751E-4FDF-AF53-EDC4BE5BF3AD}|CheapFlights.Domain\\CheapFlights.Domain.csproj|c:\\users\\andre\\source\\repos\\cheapflights.webapi\\cheapflights.domain\\contracts\\ibookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBAEC0A5-751E-4FDF-AF53-EDC4BE5BF3AD}|CheapFlights.Domain\\CheapFlights.Domain.csproj|solutionrelative:cheapflights.domain\\contracts\\ibookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{252CC083-01DF-4A1C-ABD0-28B6F228E4C9}|CheapFlights.Application\\CheapFlights.Application.csproj|c:\\users\\andre\\source\\repos\\cheapflights.webapi\\cheapflights.application\\models\\bookingresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{252CC083-01DF-4A1C-ABD0-28B6F228E4C9}|CheapFlights.Application\\CheapFlights.Application.csproj|solutionrelative:cheapflights.application\\models\\bookingresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CBAEC0A5-751E-4FDF-AF53-EDC4BE5BF3AD}|CheapFlights.Domain\\CheapFlights.Domain.csproj|c:\\users\\andre\\source\\repos\\cheapflights.webapi\\cheapflights.domain\\contracts\\iflightservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBAEC0A5-751E-4FDF-AF53-EDC4BE5BF3AD}|CheapFlights.Domain\\CheapFlights.Domain.csproj|solutionrelative:cheapflights.domain\\contracts\\iflightservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{252CC083-01DF-4A1C-ABD0-28B6F228E4C9}|CheapFlights.Application\\CheapFlights.Application.csproj|c:\\users\\andre\\source\\repos\\cheapflights.webapi\\cheapflights.application\\models\\flightresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{252CC083-01DF-4A1C-ABD0-28B6F228E4C9}|CheapFlights.Application\\CheapFlights.Application.csproj|solutionrelative:cheapflights.application\\models\\flightresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CBAEC0A5-751E-4FDF-AF53-EDC4BE5BF3AD}|CheapFlights.Domain\\CheapFlights.Domain.csproj|c:\\users\\andre\\source\\repos\\cheapflights.webapi\\cheapflights.domain\\contracts\\iavailabilityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBAEC0A5-751E-4FDF-AF53-EDC4BE5BF3AD}|CheapFlights.Domain\\CheapFlights.Domain.csproj|solutionrelative:cheapflights.domain\\contracts\\iavailabilityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF72AE37-5034-4AA4-ACD1-1675D02C13F4}|CheapFlights.WebAPI\\CheapFlights.WebAPI.csproj|c:\\users\\andre\\source\\repos\\cheapflights.webapi\\cheapflights.webapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF72AE37-5034-4AA4-ACD1-1675D02C13F4}|CheapFlights.WebAPI\\CheapFlights.WebAPI.csproj|solutionrelative:cheapflights.webapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CBAEC0A5-751E-4FDF-AF53-EDC4BE5BF3AD}|CheapFlights.Domain\\CheapFlights.Domain.csproj|c:\\users\\andre\\source\\repos\\cheapflights.webapi\\cheapflights.domain\\dtos\\retrievebookingrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBAEC0A5-751E-4FDF-AF53-EDC4BE5BF3AD}|CheapFlights.Domain\\CheapFlights.Domain.csproj|solutionrelative:cheapflights.domain\\dtos\\retrievebookingrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81E6B035-4115-4F0E-A57F-7C94FA310774}|CheapFlights.Infrastructure\\CheapFlights.Infrastructure.csproj|c:\\users\\andre\\source\\repos\\cheapflights.webapi\\cheapflights.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{81E6B035-4115-4F0E-A57F-7C94FA310774}|CheapFlights.Infrastructure\\CheapFlights.Infrastructure.csproj|solutionrelative:cheapflights.infrastructure\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CBAEC0A5-751E-4FDF-AF53-EDC4BE5BF3AD}|CheapFlights.Domain\\CheapFlights.Domain.csproj|c:\\users\\andre\\source\\repos\\cheapflights.webapi\\cheapflights.domain\\dtos\\bookingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBAEC0A5-751E-4FDF-AF53-EDC4BE5BF3AD}|CheapFlights.Domain\\CheapFlights.Domain.csproj|solutionrelative:cheapflights.domain\\dtos\\bookingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{252CC083-01DF-4A1C-ABD0-28B6F228E4C9}|CheapFlights.Application\\CheapFlights.Application.csproj|c:\\users\\andre\\source\\repos\\cheapflights.webapi\\cheapflights.application\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{252CC083-01DF-4A1C-ABD0-28B6F228E4C9}|CheapFlights.Application\\CheapFlights.Application.csproj|solutionrelative:cheapflights.application\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CBAEC0A5-751E-4FDF-AF53-EDC4BE5BF3AD}|CheapFlights.Domain\\CheapFlights.Domain.csproj|c:\\users\\andre\\source\\repos\\cheapflights.webapi\\cheapflights.domain\\dtos\\bookingrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBAEC0A5-751E-4FDF-AF53-EDC4BE5BF3AD}|CheapFlights.Domain\\CheapFlights.Domain.csproj|solutionrelative:cheapflights.domain\\dtos\\bookingrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBAEC0A5-751E-4FDF-AF53-EDC4BE5BF3AD}|CheapFlights.Domain\\CheapFlights.Domain.csproj|c:\\users\\andre\\source\\repos\\cheapflights.webapi\\cheapflights.domain\\dtos\\flightrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBAEC0A5-751E-4FDF-AF53-EDC4BE5BF3AD}|CheapFlights.Domain\\CheapFlights.Domain.csproj|solutionrelative:cheapflights.domain\\dtos\\flightrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBAEC0A5-751E-4FDF-AF53-EDC4BE5BF3AD}|CheapFlights.Domain\\CheapFlights.Domain.csproj|c:\\users\\andre\\source\\repos\\cheapflights.webapi\\cheapflights.domain\\dtos\\flightdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBAEC0A5-751E-4FDF-AF53-EDC4BE5BF3AD}|CheapFlights.Domain\\CheapFlights.Domain.csproj|solutionrelative:cheapflights.domain\\dtos\\flightdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBAEC0A5-751E-4FDF-AF53-EDC4BE5BF3AD}|CheapFlights.Domain\\CheapFlights.Domain.csproj|c:\\users\\andre\\source\\repos\\cheapflights.webapi\\cheapflights.domain\\cheapflights.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CBAEC0A5-751E-4FDF-AF53-EDC4BE5BF3AD}|CheapFlights.Domain\\CheapFlights.Domain.csproj|solutionrelative:cheapflights.domain\\cheapflights.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBAEC0A5-751E-4FDF-AF53-EDC4BE5BF3AD}|CheapFlights.Domain\\CheapFlights.Domain.csproj|c:\\users\\andre\\source\\repos\\cheapflights.webapi\\cheapflights.domain\\models\\bookingresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBAEC0A5-751E-4FDF-AF53-EDC4BE5BF3AD}|CheapFlights.Domain\\CheapFlights.Domain.csproj|solutionrelative:cheapflights.domain\\models\\bookingresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81E6B035-4115-4F0E-A57F-7C94FA310774}|CheapFlights.Infrastructure\\CheapFlights.Infrastructure.csproj|c:\\users\\andre\\source\\repos\\cheapflights.webapi\\cheapflights.infrastructure\\cheapflights.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{81E6B035-4115-4F0E-A57F-7C94FA310774}|CheapFlights.Infrastructure\\CheapFlights.Infrastructure.csproj|solutionrelative:cheapflights.infrastructure\\cheapflights.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF72AE37-5034-4AA4-ACD1-1675D02C13F4}|CheapFlights.WebAPI\\CheapFlights.WebAPI.csproj|c:\\users\\andre\\source\\repos\\cheapflights.webapi\\cheapflights.webapi\\cheapflights.webapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{BF72AE37-5034-4AA4-ACD1-1675D02C13F4}|CheapFlights.WebAPI\\CheapFlights.WebAPI.csproj|solutionrelative:cheapflights.webapi\\cheapflights.webapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBAEC0A5-751E-4FDF-AF53-EDC4BE5BF3AD}|CheapFlights.Domain\\CheapFlights.Domain.csproj|c:\\users\\andre\\source\\repos\\cheapflights.webapi\\cheapflights.domain\\models\\paxtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBAEC0A5-751E-4FDF-AF53-EDC4BE5BF3AD}|CheapFlights.Domain\\CheapFlights.Domain.csproj|solutionrelative:cheapflights.domain\\models\\paxtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBAEC0A5-751E-4FDF-AF53-EDC4BE5BF3AD}|CheapFlights.Domain\\CheapFlights.Domain.csproj|c:\\users\\andre\\source\\repos\\cheapflights.webapi\\cheapflights.domain\\models\\paxprice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBAEC0A5-751E-4FDF-AF53-EDC4BE5BF3AD}|CheapFlights.Domain\\CheapFlights.Domain.csproj|solutionrelative:cheapflights.domain\\models\\paxprice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBAEC0A5-751E-4FDF-AF53-EDC4BE5BF3AD}|CheapFlights.Domain\\CheapFlights.Domain.csproj|c:\\users\\andre\\source\\repos\\cheapflights.webapi\\cheapflights.domain\\models\\flightresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBAEC0A5-751E-4FDF-AF53-EDC4BE5BF3AD}|CheapFlights.Domain\\CheapFlights.Domain.csproj|solutionrelative:cheapflights.domain\\models\\flightresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBAEC0A5-751E-4FDF-AF53-EDC4BE5BF3AD}|CheapFlights.Domain\\CheapFlights.Domain.csproj|c:\\users\\andre\\source\\repos\\cheapflights.webapi\\cheapflights.domain\\models\\flightrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBAEC0A5-751E-4FDF-AF53-EDC4BE5BF3AD}|CheapFlights.Domain\\CheapFlights.Domain.csproj|solutionrelative:cheapflights.domain\\models\\flightrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBAEC0A5-751E-4FDF-AF53-EDC4BE5BF3AD}|CheapFlights.Domain\\CheapFlights.Domain.csproj|c:\\users\\andre\\source\\repos\\cheapflights.webapi\\cheapflights.domain\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBAEC0A5-751E-4FDF-AF53-EDC4BE5BF3AD}|CheapFlights.Domain\\CheapFlights.Domain.csproj|solutionrelative:cheapflights.domain\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBAEC0A5-751E-4FDF-AF53-EDC4BE5BF3AD}|CheapFlights.Domain\\CheapFlights.Domain.csproj|c:\\users\\andre\\source\\repos\\cheapflights.webapi\\cheapflights.domain\\models\\bookingrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBAEC0A5-751E-4FDF-AF53-EDC4BE5BF3AD}|CheapFlights.Domain\\CheapFlights.Domain.csproj|solutionrelative:cheapflights.domain\\models\\bookingrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF72AE37-5034-4AA4-ACD1-1675D02C13F4}|CheapFlights.WebAPI\\CheapFlights.WebAPI.csproj|c:\\users\\andre\\source\\repos\\cheapflights.webapi\\cheapflights.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF72AE37-5034-4AA4-ACD1-1675D02C13F4}|CheapFlights.WebAPI\\CheapFlights.WebAPI.csproj|solutionrelative:cheapflights.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,56 +94,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "BookingResult.cs",
-              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Application\\Models\\BookingResult.cs",
-              "RelativeDocumentMoniker": "CheapFlights.Application\\Models\\BookingResult.cs",
-              "ToolTip": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Application\\Models\\BookingResult.cs",
-              "RelativeToolTip": "CheapFlights.Application\\Models\\BookingResult.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAqAAAAAAAAAA==",
+              "Title": "IBookingService.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Domain\\Contracts\\IBookingService.cs",
+              "RelativeDocumentMoniker": "CheapFlights.Domain\\Contracts\\IBookingService.cs",
+              "ToolTip": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Domain\\Contracts\\IBookingService.cs",
+              "RelativeToolTip": "CheapFlights.Domain\\Contracts\\IBookingService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T13:15:21.895Z",
+              "WhenOpened": "2025-03-23T14:24:04.233Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "FlightResult.cs",
-              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Application\\Models\\FlightResult.cs",
-              "RelativeDocumentMoniker": "CheapFlights.Application\\Models\\FlightResult.cs",
-              "ToolTip": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Application\\Models\\FlightResult.cs",
-              "RelativeToolTip": "CheapFlights.Application\\Models\\FlightResult.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T12:44:33.798Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "IFlightService.cs",
-              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Application\\Contracts\\IFlightService.cs",
-              "RelativeDocumentMoniker": "CheapFlights.Application\\Contracts\\IFlightService.cs",
-              "ToolTip": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Application\\Contracts\\IFlightService.cs",
-              "RelativeToolTip": "CheapFlights.Application\\Contracts\\IFlightService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAjAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Domain\\Contracts\\IFlightService.cs",
+              "RelativeDocumentMoniker": "CheapFlights.Domain\\Contracts\\IFlightService.cs",
+              "ToolTip": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Domain\\Contracts\\IFlightService.cs",
+              "RelativeToolTip": "CheapFlights.Domain\\Contracts\\IFlightService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T12:35:26.221Z",
+              "WhenOpened": "2025-03-23T14:23:40.449Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "FlightService.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Application\\Implementation\\FlightService.cs",
+              "RelativeDocumentMoniker": "CheapFlights.Application\\Implementation\\FlightService.cs",
+              "ToolTip": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Application\\Implementation\\FlightService.cs",
+              "RelativeToolTip": "CheapFlights.Application\\Implementation\\FlightService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T14:03:15.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "FlightsController.cs",
               "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.WebAPI\\Controllers\\FlightsController.cs",
               "RelativeDocumentMoniker": "CheapFlights.WebAPI\\Controllers\\FlightsController.cs",
               "ToolTip": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.WebAPI\\Controllers\\FlightsController.cs",
               "RelativeToolTip": "CheapFlights.WebAPI\\Controllers\\FlightsController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAwwCIAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-23T12:33:56.353Z",
               "EditorCaption": ""
@@ -95,40 +151,223 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.WebAPI\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "CheapFlights.WebAPI\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.WebAPI\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "CheapFlights.WebAPI\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "IAvailabilityService.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Domain\\Contracts\\IAvailabilityService.cs",
+              "RelativeDocumentMoniker": "CheapFlights.Domain\\Contracts\\IAvailabilityService.cs",
+              "ToolTip": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Domain\\Contracts\\IAvailabilityService.cs",
+              "RelativeToolTip": "CheapFlights.Domain\\Contracts\\IAvailabilityService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T18:04:15.642Z",
+              "WhenOpened": "2025-03-23T14:22:48.284Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Infrastructure\\Class1.cs",
-              "RelativeDocumentMoniker": "CheapFlights.Infrastructure\\Class1.cs",
-              "ToolTip": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Infrastructure\\Class1.cs",
-              "RelativeToolTip": "CheapFlights.Infrastructure\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Title": "RetrieveBookingRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Domain\\DTOs\\RetrieveBookingRequestDto.cs",
+              "RelativeDocumentMoniker": "CheapFlights.Domain\\DTOs\\RetrieveBookingRequestDto.cs",
+              "ToolTip": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Domain\\DTOs\\RetrieveBookingRequestDto.cs",
+              "RelativeToolTip": "CheapFlights.Domain\\DTOs\\RetrieveBookingRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T18:08:29.95Z",
+              "WhenOpened": "2025-03-23T14:22:12.609Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Application\\Class1.cs",
-              "RelativeDocumentMoniker": "CheapFlights.Application\\Class1.cs",
-              "ToolTip": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Application\\Class1.cs",
-              "RelativeToolTip": "CheapFlights.Application\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Title": "BookingDto.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Domain\\DTOs\\BookingDto.cs",
+              "RelativeDocumentMoniker": "CheapFlights.Domain\\DTOs\\BookingDto.cs",
+              "ToolTip": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Domain\\DTOs\\BookingDto.cs",
+              "RelativeToolTip": "CheapFlights.Domain\\DTOs\\BookingDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-22T18:09:12.46Z"
+              "WhenOpened": "2025-03-23T14:21:34.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BookingRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Domain\\DTOs\\BookingRequestDto.cs",
+              "RelativeDocumentMoniker": "CheapFlights.Domain\\DTOs\\BookingRequestDto.cs",
+              "ToolTip": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Domain\\DTOs\\BookingRequestDto.cs",
+              "RelativeToolTip": "CheapFlights.Domain\\DTOs\\BookingRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T14:21:12.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FlightRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Domain\\DTOs\\FlightRequestDto.cs",
+              "RelativeDocumentMoniker": "CheapFlights.Domain\\DTOs\\FlightRequestDto.cs",
+              "ToolTip": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Domain\\DTOs\\FlightRequestDto.cs",
+              "RelativeToolTip": "CheapFlights.Domain\\DTOs\\FlightRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T14:18:48.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FlightDto.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Domain\\DTOs\\FlightDto.cs",
+              "RelativeDocumentMoniker": "CheapFlights.Domain\\DTOs\\FlightDto.cs",
+              "ToolTip": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Domain\\DTOs\\FlightDto.cs",
+              "RelativeToolTip": "CheapFlights.Domain\\DTOs\\FlightDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T14:19:14.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CheapFlights.Domain",
+              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Domain\\CheapFlights.Domain.csproj",
+              "RelativeDocumentMoniker": "CheapFlights.Domain\\CheapFlights.Domain.csproj",
+              "ToolTip": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Domain\\CheapFlights.Domain.csproj",
+              "RelativeToolTip": "CheapFlights.Domain\\CheapFlights.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-23T14:15:30.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BookingResult.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Domain\\Models\\BookingResult.cs",
+              "RelativeDocumentMoniker": "CheapFlights.Domain\\Models\\BookingResult.cs",
+              "ToolTip": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Domain\\Models\\BookingResult.cs",
+              "RelativeToolTip": "CheapFlights.Domain\\Models\\BookingResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T14:08:03.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CheapFlights.Infrastructure",
+              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Infrastructure\\CheapFlights.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "CheapFlights.Infrastructure\\CheapFlights.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Infrastructure\\CheapFlights.Infrastructure.csproj",
+              "RelativeToolTip": "CheapFlights.Infrastructure\\CheapFlights.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-23T14:11:04.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CheapFlights.WebAPI.http",
+              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.WebAPI\\CheapFlights.WebAPI.http",
+              "RelativeDocumentMoniker": "CheapFlights.WebAPI\\CheapFlights.WebAPI.http",
+              "ToolTip": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.WebAPI\\CheapFlights.WebAPI.http",
+              "RelativeToolTip": "CheapFlights.WebAPI\\CheapFlights.WebAPI.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-03-23T13:56:59.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "PaxType.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Domain\\Models\\PaxType.cs",
+              "RelativeDocumentMoniker": "CheapFlights.Domain\\Models\\PaxType.cs",
+              "ToolTip": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Domain\\Models\\PaxType.cs",
+              "RelativeToolTip": "CheapFlights.Domain\\Models\\PaxType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T14:08:30.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PaxPrice.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Domain\\Models\\PaxPrice.cs",
+              "RelativeDocumentMoniker": "CheapFlights.Domain\\Models\\PaxPrice.cs",
+              "ToolTip": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Domain\\Models\\PaxPrice.cs",
+              "RelativeToolTip": "CheapFlights.Domain\\Models\\PaxPrice.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T14:08:27.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FlightResult.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Domain\\Models\\FlightResult.cs",
+              "RelativeDocumentMoniker": "CheapFlights.Domain\\Models\\FlightResult.cs",
+              "ToolTip": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Domain\\Models\\FlightResult.cs",
+              "RelativeToolTip": "CheapFlights.Domain\\Models\\FlightResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T14:08:25.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "FlightRequest.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Domain\\Models\\FlightRequest.cs",
+              "RelativeDocumentMoniker": "CheapFlights.Domain\\Models\\FlightRequest.cs",
+              "ToolTip": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Domain\\Models\\FlightRequest.cs",
+              "RelativeToolTip": "CheapFlights.Domain\\Models\\FlightRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T14:08:22.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Contact.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Domain\\Models\\Contact.cs",
+              "RelativeDocumentMoniker": "CheapFlights.Domain\\Models\\Contact.cs",
+              "ToolTip": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Domain\\Models\\Contact.cs",
+              "RelativeToolTip": "CheapFlights.Domain\\Models\\Contact.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T14:08:04.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BookingRequest.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Domain\\Models\\BookingRequest.cs",
+              "RelativeDocumentMoniker": "CheapFlights.Domain\\Models\\BookingRequest.cs",
+              "ToolTip": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Domain\\Models\\BookingRequest.cs",
+              "RelativeToolTip": "CheapFlights.Domain\\Models\\BookingRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T14:08:02.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.WebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "CheapFlights.WebAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.WebAPI\\Program.cs",
+              "RelativeToolTip": "CheapFlights.WebAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T13:47:07.913Z",
+              "EditorCaption": ""
             }
           ]
         }

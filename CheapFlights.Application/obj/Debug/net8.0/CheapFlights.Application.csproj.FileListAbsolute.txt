@@ -1,0 +1,15 @@
+C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Application\obj\Debug\net8.0\CheapFlights.Application.csproj.AssemblyReference.cache
+C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Application\obj\Debug\net8.0\CheapFlights.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Application\obj\Debug\net8.0\CheapFlights.Application.AssemblyInfoInputs.cache
+C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Application\obj\Debug\net8.0\CheapFlights.Application.AssemblyInfo.cs
+C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Application\obj\Debug\net8.0\CheapFlights.Application.csproj.CoreCompileInputs.cache
+C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Application\bin\Debug\net8.0\CheapFlights.Application.deps.json
+C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Application\bin\Debug\net8.0\CheapFlights.Application.dll
+C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Application\bin\Debug\net8.0\CheapFlights.Application.pdb
+C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Application\bin\Debug\net8.0\CheapFlights.Domain.dll
+C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Application\bin\Debug\net8.0\CheapFlights.Domain.pdb
+C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Application\obj\Debug\net8.0\CheapFli.1CA6AA98.Up2Date
+C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Application\obj\Debug\net8.0\CheapFlights.Application.dll
+C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Application\obj\Debug\net8.0\refint\CheapFlights.Application.dll
+C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Application\obj\Debug\net8.0\CheapFlights.Application.pdb
+C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Application\obj\Debug\net8.0\ref\CheapFlights.Application.dll
