@@ -1,0 +1,6 @@
+@CheapFlights.WebAPI_HostAddress = http://localhost:5245
+
+GET {{CheapFlights.WebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
