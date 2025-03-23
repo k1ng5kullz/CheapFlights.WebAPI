@@ -40,3 +40,7 @@ C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.WebAPI\obj\Debug\ne
 C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.WebAPI\obj\Debug\net8.0\CheapFlights.WebAPI.sourcelink.json
 C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.WebAPI\bin\Debug\net8.0\AutoMapper.dll
 C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.WebAPI\obj\Debug\net8.0\CheapFlights.WebAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.WebAPI\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.WebAPI\bin\Debug\net8.0\CheapFlights.Infrastructure.dll
+C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.WebAPI\bin\Debug\net8.0\CheapFlights.Infrastructure.pdb
+C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.WebAPI\bin\Debug\net8.0\data\flights.json

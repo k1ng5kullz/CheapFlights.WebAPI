@@ -1,5 +1,6 @@
-using CheapFlights.Application.Implementation;
 using CheapFlights.Domain.Contracts;
+using CheapFlights.Application.Implementation;
+using CheapFlights.Infrastructure.Implementation;
 
 var builder = WebApplication.CreateBuilder(args);
 

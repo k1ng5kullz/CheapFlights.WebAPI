@@ -10,3 +10,8 @@ C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Infrastructure\obj\
 C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Infrastructure\obj\Debug\net8.0\CheapFlights.Infrastructure.pdb
 C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Infrastructure\obj\Debug\net8.0\ref\CheapFlights.Infrastructure.dll
 C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Infrastructure\obj\Debug\net8.0\CheapFlights.Infrastructure.sourcelink.json
+C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Infrastructure\bin\Debug\net8.0\CheapFlights.Domain.dll
+C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Infrastructure\bin\Debug\net8.0\CheapFlights.Domain.pdb
+C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Infrastructure\obj\Debug\net8.0\CheapFlights.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Infrastructure\obj\Debug\net8.0\CheapFli.D0E278FA.Up2Date
+C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Infrastructure\bin\Debug\net8.0\data\flights.json

@@ -5,6 +5,6 @@ namespace CheapFlights.Domain.Contracts;
 
 public interface IBookingService
 {
-    Task<BookingResultDto> CreateBooking(BookingRequestDto flightRq);
+    Task<BookingResultDto> CreateBooking(BookingRequestDto request);
     Task<BookingResultDto> RetrieveBooking(RetrieveBookingRequestDto request);
 }
