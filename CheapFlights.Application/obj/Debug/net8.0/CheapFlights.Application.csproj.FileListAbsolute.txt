@@ -13,3 +13,4 @@ C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Application\obj\Deb
 C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Application\obj\Debug\net8.0\refint\CheapFlights.Application.dll
 C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Application\obj\Debug\net8.0\CheapFlights.Application.pdb
 C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Application\obj\Debug\net8.0\ref\CheapFlights.Application.dll
+C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Application\obj\Debug\net8.0\CheapFlights.Application.sourcelink.json

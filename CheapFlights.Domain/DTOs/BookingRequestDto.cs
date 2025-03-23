@@ -1,11 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace CheapFlights.Domain.DTOs;
 
-namespace CheapFlights.Domain.DTOs;
-
-public class BookingRequestDto
-{
-}
+public record BookingRequestDto(string FlightKey, string FirstNamePax1, string LastNamePax1, DateTime DateOfBirthPax1, string FirstNamePax2, string LastNamePax2, DateTime DateOfBirthPax2, string FirstNamePax3, string LastNamePax3, DateTime DateOfBirthPax3, string FirstNamePax4, string LastNamePax4, DateTime DateOfBirthPax4, string FirstNamePax5, string LastNamePax5, DateTime DateOfBirthPax5, ContactDto Contact);

@@ -6,6 +6,4 @@ using System.Threading.Tasks;
 
 namespace CheapFlights.Domain.DTOs;
 
-public class FlightDto
-{
-}
+public record ContactDto(string FirstName, string LastName, string Email);

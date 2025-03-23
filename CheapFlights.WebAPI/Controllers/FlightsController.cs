@@ -10,7 +10,7 @@ public class FlightsController : ControllerBase
 {
     private readonly IFlightService _flightService;
 
-    FlightsController(IFlightService flightService)
+    public FlightsController(IFlightService flightService)
     {
         _flightService = flightService;
     }
@@ -25,14 +25,14 @@ public class FlightsController : ControllerBase
     [HttpPost("booking")]
     public async Task<ActionResult<BookingResult>> Availability(BookingRequest request)
     {
-        var availability = await _flightService.CheckAvailabilityAsync(request);
+        var availability = await _flightService.CreateBookingAsync(request);
         return Ok(availability);
     }
 
     [HttpGet("retrieve({bookingId}/{contactEmail}")]
     public async Task<ActionResult<BookingResult>> Retrieve(string bookingId, string contactEmail)
     {
-        var booking = await _flightService.RetrieveBookingAsync(bookingId, contactEmail);
+        var booking = await _flightService.RetrieveBookingAsync(new RetrieveBookingRequest(bookingId, contactEmail));
         return Ok(booking);
     }
 

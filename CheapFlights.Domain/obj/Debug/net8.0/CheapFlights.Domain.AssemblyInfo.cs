@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CheapFlights.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07dccd0b2af1aab80738c77e55eaf74390f75c69")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4dfe76f8c0193c208b6f12bf2c37f748f36a1ffa")]
 [assembly: System.Reflection.AssemblyProductAttribute("CheapFlights.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CheapFlights.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -4,7 +4,7 @@ namespace CheapFlights.Domain.Contracts;
 
 public interface IAvailabilityService
 {
-    List<FlightDto> GetFlights(FlightRequestDto
+    Task<List<FlightResultDto>> GetFlights(FlightRequestDto
         flightRq);
-    FlightDto GetFlightByKey(string flightKey);
+    Task<FlightResultDto> GetFlightByKey(string flightKey);
 }

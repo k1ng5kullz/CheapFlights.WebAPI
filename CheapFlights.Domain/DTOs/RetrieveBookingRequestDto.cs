@@ -6,6 +6,4 @@ using System.Threading.Tasks;
 
 namespace CheapFlights.Domain.DTOs;
 
-public class RetrieveBookingRequestDto
-{
-}
+public record RetrieveBookingRequestDto(string BookingId, string ContactEmail);

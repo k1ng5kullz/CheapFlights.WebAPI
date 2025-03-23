@@ -1,9 +1,10 @@
 ﻿using CheapFlights.Domain.DTOs;
+using CheapFlights.Domain.Models;
 
 namespace CheapFlights.Domain.Contracts;
 
 public interface IBookingService
 {
-    List<FlightDto> GetFlights(FlightRequestDto flightRq);
-    FlightDto GetFlightByKey(string flightKey);
+    Task<BookingResultDto> CreateBooking(BookingRequestDto flightRq);
+    Task<BookingResultDto> RetrieveBooking(RetrieveBookingRequestDto request);
 }

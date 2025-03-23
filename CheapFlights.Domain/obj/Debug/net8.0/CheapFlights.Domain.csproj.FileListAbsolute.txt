@@ -9,3 +9,4 @@ C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Domain\obj\Debug\ne
 C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Domain\obj\Debug\net8.0\refint\CheapFlights.Domain.dll
 C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Domain\obj\Debug\net8.0\CheapFlights.Domain.pdb
 C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Domain\obj\Debug\net8.0\ref\CheapFlights.Domain.dll
+C:\Users\andre\source\repos\CheapFlights.WebAPI\CheapFlights.Domain\obj\Debug\net8.0\CheapFlights.Domain.sourcelink.json

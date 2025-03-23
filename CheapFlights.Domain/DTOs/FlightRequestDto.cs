@@ -1,11 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace CheapFlights.Domain.DTOs;
 
-namespace CheapFlights.Domain.DTOs;
-
-public class FlightRequestDto
-{
-}
+public record FlightRequestDto(DateTime FlightDate, string Origin, string Destination, List<PaxTypeDto> PaxType);
