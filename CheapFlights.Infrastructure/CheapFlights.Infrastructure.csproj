@@ -19,6 +19,7 @@
 	<ItemGroup>
 		<PackageReference Include="AutoMapper" Version="14.0.0" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="System.Runtime.Caching" Version="9.0.3" />
 	</ItemGroup>
 
 	<ItemGroup>

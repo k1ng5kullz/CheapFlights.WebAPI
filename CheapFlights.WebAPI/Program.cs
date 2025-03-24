@@ -1,10 +1,12 @@
 using CheapFlights.Domain.Contracts;
 using CheapFlights.Application.Implementation;
 using CheapFlights.Infrastructure.Implementation;
+using CheapFlights.Infrastructure.Cache;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddTransient<ICacheService, CacheService>();
 builder.Services.AddTransient<IBookingService, BookingService>();
 builder.Services.AddTransient<IAvailabilityService, AvailabilityService>();
 builder.Services.AddTransient<IFlightService, FlightService>();

@@ -1,22 +1,19 @@
-﻿using AutoMapper;
+﻿using CheapFlights.Infrastructure.Cache;
 using CheapFlights.Domain.Contracts;
 using CheapFlights.Domain.DTOs;
-using CheapFlights.Infrastructure.Implementation;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CheapFlights.Infrastructure.Implementation;
 
 public class BookingService : IBookingService
 {
     private readonly IAvailabilityService _availabilityService;
+    private readonly ICacheService _cacheService;
 
-    public BookingService(IAvailabilityService availabilityService, IMapper mapper)
+
+    public BookingService(IAvailabilityService availabilityService, ICacheService cacheService)
     {
         _availabilityService = availabilityService;
+        _cacheService = cacheService;
     }
 
     public string RandomBookingId(int length)
@@ -28,9 +25,9 @@ public class BookingService : IBookingService
             .Select(s => s[random.Next(s.Length)]).ToArray());
     }
 
-    public async Task<BookingResultDto> CreateBooking(BookingRequestDto request)
+    public BookingResultDto CreateBooking(BookingRequestDto request)
     {
-        var flight = await _availabilityService.GetFlightByKey(request.FlightKey);
+        var flight = _availabilityService.GetFlightByKey(request.FlightKey);
 
         var booking = new BookingResultDto(flight.FlightDate,
             flight.Origin,
@@ -56,13 +53,13 @@ public class BookingService : IBookingService
             RandomBookingId(6).ToUpper(),
             flight.PaxPrice.Sum(s => s.Price));
 
-        //_cacheService.AddBooking(booking);
+        _cacheService.AddBooking(booking);
 
         return booking;
     }
 
-    public Task<BookingResultDto> RetrieveBooking(RetrieveBookingRequestDto request)
+    public BookingResultDto RetrieveBooking(RetrieveBookingRequestDto request)
     {
-        throw new NotImplementedException();
+        return _cacheService.RetrieveBooking(request);
     }
 }

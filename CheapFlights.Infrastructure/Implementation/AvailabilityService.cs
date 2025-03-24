@@ -7,7 +7,7 @@ namespace CheapFlights.Infrastructure.Implementation;
 
 public class AvailabilityService : IAvailabilityService
 {
-    private List<FlightResultDto> flights;
+    private List<FlightResultDto> _flights;
 
     public AvailabilityService()
     {
@@ -21,7 +21,7 @@ public class AvailabilityService : IAvailabilityService
         var fileSettings = ".data.flights.json";
 
         var pathConfigfile = string.Concat(assembly.GetName().Name, fileSettings);
-        flights = JsonConvert.DeserializeObject<List<FlightResultDto>>(GetAssemblyFile(pathConfigfile));
+        _flights = JsonConvert.DeserializeObject<List<FlightResultDto>>(GetAssemblyFile(pathConfigfile));
     }
 
     private static string GetAssemblyFile(string resource)
@@ -39,14 +39,14 @@ public class AvailabilityService : IAvailabilityService
         return null;
     }
 
-    public async Task<FlightResultDto> GetFlightByKey(string flightKey)
+    public FlightResultDto GetFlightByKey(string flightKey)
     {
-        return flights.FirstOrDefault(w => w.FlightKey == flightKey);
+        return _flights.FirstOrDefault(w => w.FlightKey == flightKey);
     }
 
-    public async Task<List<FlightResultDto>> GetFlights(FlightRequestDto flightRq)
+    public List<FlightResultDto> GetFlights(FlightRequestDto flightRq)
     {
-        var flig = flights.Where(w => w.FlightDate.Date == flightRq.FlightDate.Date && flightRq.Origin == w.Origin && w.Destination == flightRq.Destination).ToList();
+        var flig = _flights.Where(w => w.FlightDate.Date == flightRq.FlightDate.Date && flightRq.Origin == w.Origin && w.Destination == flightRq.Destination).ToList();
 
         var hasADT = flightRq.PaxType.Any(a => a.Type == "ADT");
         var hasCHD = flightRq.PaxType.Any(a => a.Type == "CHD");

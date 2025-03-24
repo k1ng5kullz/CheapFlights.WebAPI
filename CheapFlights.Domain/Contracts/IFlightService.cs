@@ -4,7 +4,7 @@ namespace CheapFlights.Domain.Contracts;
 
 public interface IFlightService
 {
-    Task<List<FlightResult>> GetFlightsAsync(FlightRequest request);
-    Task<BookingResult> CreateBookingAsync(BookingRequest request);
-    Task<BookingResult> RetrieveBookingAsync(RetrieveBookingRequest request);
+    List<FlightResult> GetFlights(FlightRequest request);
+    BookingResult CreateBooking(BookingRequest request);
+    BookingResult RetrieveBooking(RetrieveBookingRequest request);
 }

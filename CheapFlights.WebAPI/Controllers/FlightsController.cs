@@ -18,21 +18,21 @@ public class FlightsController : ControllerBase
     [HttpPost("availability")]
     public async Task<ActionResult<IEnumerable<FlightResult>>> Get(FlightRequest request)
     {
-        var flights = await _flightService.GetFlightsAsync(request);
+        var flights = await Task.Run(() => _flightService.GetFlights(request));
         return Ok(flights);
     }
 
     [HttpPost("booking")]
     public async Task<ActionResult<BookingResult>> Availability(BookingRequest request)
     {
-        var availability = await _flightService.CreateBookingAsync(request);
+        var availability = await Task.Run(() => _flightService.CreateBooking(request));
         return Ok(availability);
     }
 
     [HttpGet("retrieve({bookingId}/{contactEmail}")]
     public async Task<ActionResult<BookingResult>> Retrieve(string bookingId, string contactEmail)
     {
-        var booking = await _flightService.RetrieveBookingAsync(new RetrieveBookingRequest(bookingId, contactEmail));
+        var booking = await Task.Run(() => _flightService.RetrieveBooking(new RetrieveBookingRequest(bookingId, contactEmail)));
         return Ok(booking);
     }
 

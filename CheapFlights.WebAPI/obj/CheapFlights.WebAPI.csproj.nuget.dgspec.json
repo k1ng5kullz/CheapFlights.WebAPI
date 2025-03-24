@@ -1,40 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.WebAPI\\CheapFlights.WebAPI.csproj": {}
+    "c:\\users\\fabcorte\\CheapFlights.WebAPI\\CheapFlights.WebAPI\\CheapFlights.WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Application\\CheapFlights.Application.csproj": {
+    "c:\\users\\fabcorte\\CheapFlights.WebAPI\\CheapFlights.Application\\CheapFlights.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Application\\CheapFlights.Application.csproj",
+        "projectUniqueName": "c:\\users\\fabcorte\\CheapFlights.WebAPI\\CheapFlights.Application\\CheapFlights.Application.csproj",
         "projectName": "CheapFlights.Application",
-        "projectPath": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Application\\CheapFlights.Application.csproj",
-        "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Application\\obj\\",
+        "projectPath": "c:\\users\\fabcorte\\CheapFlights.WebAPI\\CheapFlights.Application\\CheapFlights.Application.csproj",
+        "packagesPath": "C:\\Users\\fabcorte\\.nuget\\packages\\",
+        "outputPath": "c:\\users\\fabcorte\\CheapFlights.WebAPI\\CheapFlights.Application\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\fabcorte\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Domain\\CheapFlights.Domain.csproj": {
-                "projectPath": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Domain\\CheapFlights.Domain.csproj"
+              "c:\\users\\fabcorte\\CheapFlights.WebAPI\\CheapFlights.Domain\\CheapFlights.Domain.csproj": {
+                "projectPath": "c:\\users\\fabcorte\\CheapFlights.WebAPI\\CheapFlights.Domain\\CheapFlights.Domain.csproj"
               }
             }
           }
@@ -80,29 +73,22 @@
         }
       }
     },
-    "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Domain\\CheapFlights.Domain.csproj": {
+    "c:\\users\\fabcorte\\CheapFlights.WebAPI\\CheapFlights.Domain\\CheapFlights.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Domain\\CheapFlights.Domain.csproj",
+        "projectUniqueName": "c:\\users\\fabcorte\\CheapFlights.WebAPI\\CheapFlights.Domain\\CheapFlights.Domain.csproj",
         "projectName": "CheapFlights.Domain",
-        "projectPath": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Domain\\CheapFlights.Domain.csproj",
-        "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Domain\\obj\\",
+        "projectPath": "c:\\users\\fabcorte\\CheapFlights.WebAPI\\CheapFlights.Domain\\CheapFlights.Domain.csproj",
+        "packagesPath": "C:\\Users\\fabcorte\\.nuget\\packages\\",
+        "outputPath": "c:\\users\\fabcorte\\CheapFlights.WebAPI\\CheapFlights.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\fabcorte\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -146,37 +132,30 @@
         }
       }
     },
-    "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Infrastructure\\CheapFlights.Infrastructure.csproj": {
+    "c:\\users\\fabcorte\\CheapFlights.WebAPI\\CheapFlights.Infrastructure\\CheapFlights.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Infrastructure\\CheapFlights.Infrastructure.csproj",
+        "projectUniqueName": "c:\\users\\fabcorte\\CheapFlights.WebAPI\\CheapFlights.Infrastructure\\CheapFlights.Infrastructure.csproj",
         "projectName": "CheapFlights.Infrastructure",
-        "projectPath": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Infrastructure\\CheapFlights.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Infrastructure\\obj\\",
+        "projectPath": "c:\\users\\fabcorte\\CheapFlights.WebAPI\\CheapFlights.Infrastructure\\CheapFlights.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\fabcorte\\.nuget\\packages\\",
+        "outputPath": "c:\\users\\fabcorte\\CheapFlights.WebAPI\\CheapFlights.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\fabcorte\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Domain\\CheapFlights.Domain.csproj": {
-                "projectPath": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Domain\\CheapFlights.Domain.csproj"
+              "c:\\users\\fabcorte\\CheapFlights.WebAPI\\CheapFlights.Domain\\CheapFlights.Domain.csproj": {
+                "projectPath": "c:\\users\\fabcorte\\CheapFlights.WebAPI\\CheapFlights.Domain\\CheapFlights.Domain.csproj"
               }
             }
           }
@@ -204,6 +183,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "System.Runtime.Caching": {
+              "target": "Package",
+              "version": "[9.0.3, )"
             }
           },
           "imports": [
@@ -226,40 +209,33 @@
         }
       }
     },
-    "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.WebAPI\\CheapFlights.WebAPI.csproj": {
+    "c:\\users\\fabcorte\\CheapFlights.WebAPI\\CheapFlights.WebAPI\\CheapFlights.WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.WebAPI\\CheapFlights.WebAPI.csproj",
+        "projectUniqueName": "c:\\users\\fabcorte\\CheapFlights.WebAPI\\CheapFlights.WebAPI\\CheapFlights.WebAPI.csproj",
         "projectName": "CheapFlights.WebAPI",
-        "projectPath": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.WebAPI\\CheapFlights.WebAPI.csproj",
-        "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.WebAPI\\obj\\",
+        "projectPath": "c:\\users\\fabcorte\\CheapFlights.WebAPI\\CheapFlights.WebAPI\\CheapFlights.WebAPI.csproj",
+        "packagesPath": "C:\\Users\\fabcorte\\.nuget\\packages\\",
+        "outputPath": "c:\\users\\fabcorte\\CheapFlights.WebAPI\\CheapFlights.WebAPI\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\fabcorte\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Application\\CheapFlights.Application.csproj": {
-                "projectPath": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Application\\CheapFlights.Application.csproj"
+              "c:\\users\\fabcorte\\CheapFlights.WebAPI\\CheapFlights.Application\\CheapFlights.Application.csproj": {
+                "projectPath": "c:\\users\\fabcorte\\CheapFlights.WebAPI\\CheapFlights.Application\\CheapFlights.Application.csproj"
               },
-              "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Infrastructure\\CheapFlights.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\andre\\source\\repos\\CheapFlights.WebAPI\\CheapFlights.Infrastructure\\CheapFlights.Infrastructure.csproj"
+              "c:\\users\\fabcorte\\CheapFlights.WebAPI\\CheapFlights.Infrastructure\\CheapFlights.Infrastructure.csproj": {
+                "projectPath": "c:\\users\\fabcorte\\CheapFlights.WebAPI\\CheapFlights.Infrastructure\\CheapFlights.Infrastructure.csproj"
               }
             }
           }
