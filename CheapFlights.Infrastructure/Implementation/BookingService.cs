@@ -29,29 +29,20 @@ public class BookingService : IBookingService
     {
         var flight = _availabilityService.GetFlightByKey(request.FlightKey);
 
+        int adults = request.Passengers.Count(passenger => (DateTime.Today.Year - passenger.DateOfBirth.Year) > 16 && passenger.FirstName != string.Empty);
+        int childs = request.Passengers.Count(passenger => (DateTime.Today.Year - passenger.DateOfBirth.Year) < 16 && passenger.FirstName != string.Empty);
+
+        decimal price = (adults * flight.PaxPrice[0].Price) + (childs * flight.PaxPrice[1].Price);
+
         var booking = new BookingResultDto(flight.FlightDate,
             flight.Origin,
             flight.Destination,
             flight.FlightNumber,
-            request.FirstNamePax1,
-            request.LastNamePax1,
-            request.DateOfBirthPax1,
-            request.FirstNamePax2,
-            request.LastNamePax2,
-            request.DateOfBirthPax2,
-            request.FirstNamePax3,
-            request.LastNamePax3,
-            request.DateOfBirthPax3,
-            request.FirstNamePax4,
-            request.LastNamePax4,
-            request.DateOfBirthPax4,
-            request.FirstNamePax5,
-            request.LastNamePax5,
-            request.DateOfBirthPax5,
+            request.Passengers,
             request.Contact,
             DateTime.UtcNow,
             RandomBookingId(6).ToUpper(),
-            flight.PaxPrice.Sum(s => s.Price));
+            price);
 
         _cacheService.AddBooking(booking);
 

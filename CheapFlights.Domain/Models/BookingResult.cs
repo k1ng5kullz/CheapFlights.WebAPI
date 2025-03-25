@@ -1,3 +1,11 @@
 ﻿namespace CheapFlights.Domain.Models;
 
-public record BookingResult(DateTime FlightDate, string Origin, string Destination, string FlightNumber, string FirstNamePax1, string LastNamePax1, DateTime DateOfBirthPax1, string FirstNamePax2, string LastNamePax2, DateTime DateOfBirthPax2, string FirstNamePax3, string LastNamePax3, DateTime DateOfBirthPax3, string FirstNamePax4, string LastNamePax4, DateTime DateOfBirthPax4, string FirstNamePax5, string LastNamePax5, DateTime DateOfBirthPax5, Contact Contact, DateTime BookingDate, string BookingId, decimal TotalPrice);
+public record BookingResult(DateTime FlightDate,
+                            string Origin,
+                            string Destination,
+                            string FlightNumber,
+                            List<Passenger> Passengers,
+                            Contact Contact,
+                            DateTime BookingDate,
+                            string BookingId,
+                            decimal TotalPrice);

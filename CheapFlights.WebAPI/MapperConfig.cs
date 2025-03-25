@@ -11,6 +11,7 @@ public class CheapFlightsProfile : Profile
         CreateMap<PaxPrice, PaxPriceDto>().ReverseMap();
         CreateMap<PaxType, PaxTypeDto>().ReverseMap();
         CreateMap<Contact, ContactDto>().ReverseMap();
+        CreateMap<Passenger, PassengerDto>().ReverseMap();
         CreateMap<RetrieveBookingRequest, RetrieveBookingRequestDto>().ReverseMap();
         CreateMap<BookingRequest, BookingRequestDto>().ReverseMap();
         CreateMap<BookingResult, BookingResultDto>().ReverseMap();
