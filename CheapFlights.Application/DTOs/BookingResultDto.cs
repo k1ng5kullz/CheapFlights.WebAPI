@@ -1,4 +1,4 @@
-﻿namespace CheapFlights.Domain.DTOs;
+﻿namespace CheapFlights.Application.DTOs;
 
 public record BookingResultDto(DateTime FlightDate,
                                string Origin,

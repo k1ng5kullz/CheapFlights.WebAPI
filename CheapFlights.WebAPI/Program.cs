@@ -1,8 +1,9 @@
 using CheapFlights.Domain.Contracts;
+using CheapFlights.Application.Contracts;
 using CheapFlights.Application.Implementation;
 using CheapFlights.Infrastructure.Implementation;
 using CheapFlights.Infrastructure.Cache;
-using Newtonsoft.Json.Serialization;
+
 
 var builder = WebApplication.CreateBuilder(args);
 

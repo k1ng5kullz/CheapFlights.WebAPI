@@ -1,7 +1,6 @@
-﻿using CheapFlights.Domain.DTOs;
-using CheapFlights.Domain.Models;
+﻿using CheapFlights.Application.DTOs;
 
-namespace CheapFlights.Domain.Contracts;
+namespace CheapFlights.Application.Contracts;
 
 public interface IBookingService
 {

@@ -1,4 +1,4 @@
-﻿using CheapFlights.Domain.DTOs;
+﻿using CheapFlights.Application.DTOs;
 using System.Diagnostics;
 using System.Runtime.Caching;
 

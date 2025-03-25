@@ -27,7 +27,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\CheapFlights.Domain\CheapFlights.Domain.csproj" />
+		<ProjectReference Include="..\CheapFlights.Application\CheapFlights.Application.csproj" />
 	</ItemGroup>
 
 </Project>

@@ -1,6 +1,6 @@
 ﻿using CheapFlights.Infrastructure.Cache;
-using CheapFlights.Domain.Contracts;
-using CheapFlights.Domain.DTOs;
+using CheapFlights.Application.DTOs;
+using CheapFlights.Application.Contracts;
 
 namespace CheapFlights.Infrastructure.Implementation;
 

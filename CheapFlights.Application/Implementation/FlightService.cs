@@ -1,7 +1,8 @@
 ﻿using CheapFlights.Domain.Models;
 using CheapFlights.Domain.Contracts;
 using AutoMapper;
-using CheapFlights.Domain.DTOs;
+using CheapFlights.Application.DTOs;
+using CheapFlights.Application.Contracts;
 
 namespace CheapFlights.Application.Implementation;
 

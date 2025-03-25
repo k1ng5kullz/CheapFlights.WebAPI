@@ -10,6 +10,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheapFlights.WebAPI", "Chea
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheapFlights.Infrastructure", "CheapFlights.Infrastructure\CheapFlights.Infrastructure.csproj", "{81E6B035-4115-4F0E-A57F-7C94FA310774}"
 	ProjectSection(ProjectDependencies) = postProject
+		{252CC083-01DF-4A1C-ABD0-28B6F228E4C9} = {252CC083-01DF-4A1C-ABD0-28B6F228E4C9}
 		{CBAEC0A5-751E-4FDF-AF53-EDC4BE5BF3AD} = {CBAEC0A5-751E-4FDF-AF53-EDC4BE5BF3AD}
 	EndProjectSection
 EndProject

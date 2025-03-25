@@ -1,4 +1,4 @@
-﻿using CheapFlights.Domain.DTOs;
+﻿using CheapFlights.Application.DTOs;
 
 namespace CheapFlights.Infrastructure.Cache;
 

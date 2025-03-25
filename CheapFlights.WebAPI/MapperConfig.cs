@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using CheapFlights.Domain.DTOs;
+using CheapFlights.Application.DTOs;
 using CheapFlights.Domain.Models;
 
 namespace CheapFlights.WebAPI.Mapper;
