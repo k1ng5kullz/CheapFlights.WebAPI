@@ -8,7 +8,7 @@ using CheapFlights.Infrastructure.Cache;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddTransient<ICacheService, CacheService>();
+builder.Services.AddSingleton<ICacheService, CacheService>();
 builder.Services.AddTransient<IBookingService, BookingService>();
 builder.Services.AddTransient<IAvailabilityService, AvailabilityService>();
 builder.Services.AddTransient<IFlightService, FlightService>();
