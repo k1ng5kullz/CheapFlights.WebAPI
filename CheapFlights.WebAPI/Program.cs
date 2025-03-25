@@ -2,6 +2,7 @@ using CheapFlights.Domain.Contracts;
 using CheapFlights.Application.Implementation;
 using CheapFlights.Infrastructure.Implementation;
 using CheapFlights.Infrastructure.Cache;
+using Newtonsoft.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,7 +11,7 @@ builder.Services.AddTransient<ICacheService, CacheService>();
 builder.Services.AddTransient<IBookingService, BookingService>();
 builder.Services.AddTransient<IAvailabilityService, AvailabilityService>();
 builder.Services.AddTransient<IFlightService, FlightService>();
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddNewtonsoftJson();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
