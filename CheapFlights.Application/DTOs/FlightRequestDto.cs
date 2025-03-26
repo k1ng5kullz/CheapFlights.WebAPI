@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace CheapFlights.Application.DTOs;
 
-public record FlightRequestDto(DateTime FlightDate, string Origin, string Destination, List<PaxTypeDto> PaxType)
+public class FlightRequestDto(DateTime FlightDate, string Origin, string Destination, List<PaxTypeDto> PaxType)
 {
     [Required(ErrorMessage = "La fecha de vuelo es obligatoria")]
     public DateTime FlightDate { get; init; } = FlightDate;

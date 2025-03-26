@@ -2,7 +2,7 @@
 
 namespace CheapFlights.Application.DTOs;
 
-public record PassengerDto(string FirstName, string LastName, DateTime DateOfBirth)
+public class PassengerDto(string FirstName, string LastName, DateTime DateOfBirth)
 {
     [Required(ErrorMessage = "El nombre del pasajero es obligatorio")]
     public string FirstName { get; init; } = FirstName;

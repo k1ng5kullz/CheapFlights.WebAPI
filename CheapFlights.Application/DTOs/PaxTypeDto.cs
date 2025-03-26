@@ -2,7 +2,7 @@
 
 namespace CheapFlights.Application.DTOs;
 
-public record PaxTypeDto(string Type, int Quantity)
+public class PaxTypeDto(string Type, int Quantity)
 {
     [Required(ErrorMessage = "El tipo de pasajero es obligatorio")]
     public string Type { get; init; } = Type;

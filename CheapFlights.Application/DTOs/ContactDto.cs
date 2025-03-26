@@ -2,7 +2,7 @@
 
 namespace CheapFlights.Application.DTOs;
 
-public record ContactDto(string FirstName, string LastName, string Email)
+public class ContactDto(string FirstName, string LastName, string Email)
 {
     [Required(ErrorMessage = "El nombre del contacto es obligatorio")]
     public string FirstName { get; init; } = FirstName;

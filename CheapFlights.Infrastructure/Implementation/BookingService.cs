@@ -1,6 +1,7 @@
 ﻿using CheapFlights.Infrastructure.Cache;
 using CheapFlights.Domain.Contracts;
 using CheapFlights.Domain.Models;
+using CheapFlights.Domain.Constants;
 
 namespace CheapFlights.Infrastructure.Implementation;
 
@@ -29,8 +30,8 @@ public class BookingService : IBookingService
     {
         var flight = await _availabilityService.GetFlightByKey(request.FlightKey);
 
-        int adults = request.Passengers.Count(passenger => (DateTime.Today.Year - passenger.DateOfBirth.Year) > 16 && passenger.FirstName != string.Empty);
-        int childs = request.Passengers.Count(passenger => (DateTime.Today.Year - passenger.DateOfBirth.Year) < 16 && passenger.FirstName != string.Empty);
+        int adults = request.Passengers.Count(passenger => passenger.Type == PassengerType.Adult);
+        int childs = request.Passengers.Count(passenger => passenger.Type == PassengerType.Child);
 
         decimal price = (adults * flight.PaxPrice[0].Price) + (childs * flight.PaxPrice[1].Price);
 
