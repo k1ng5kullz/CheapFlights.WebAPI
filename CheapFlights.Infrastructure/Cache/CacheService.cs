@@ -6,7 +6,7 @@ namespace CheapFlights.Infrastructure.Cache
 {
     public class CacheService : ICacheService
     {
-        public static MemoryCache Cache { get; set; }
+        public static MemoryCache? Cache { get; set; }
 
         public CacheService()
         {
@@ -19,7 +19,7 @@ namespace CheapFlights.Infrastructure.Cache
             try
             {
                 var key = $"{request.BookingId}{request.ContactEmail}";
-                CacheRepository.TryGet<BookingResult>(Cache, key, out result);
+                CacheRepository.TryGet<BookingResult>(Cache!, key, out result);
             }
             catch (Exception ex)
             {
@@ -35,7 +35,7 @@ namespace CheapFlights.Infrastructure.Cache
             try
             {
                 var key = $"{bookingRs.BookingId}{bookingRs.Contact.Email}";
-                CacheRepository.Add(Cache, key, bookingRs, new CacheItemPolicy
+                CacheRepository.Add(Cache!, key, bookingRs, new CacheItemPolicy
                 {
                     AbsoluteExpiration = DateTime.UtcNow.AddDays(1)
                 });

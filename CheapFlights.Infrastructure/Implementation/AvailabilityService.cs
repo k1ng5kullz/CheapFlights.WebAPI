@@ -9,7 +9,7 @@ namespace CheapFlights.Infrastructure.Implementation;
 
 public class AvailabilityService : IAvailabilityService
 {
-    private List<FlightResult> _flights;
+    private List<FlightResult>? _flights;
 
     public AvailabilityService()
     {
@@ -38,17 +38,17 @@ public class AvailabilityService : IAvailabilityService
                 return reader.ReadToEnd();
             }
         }
-        return null;
+        return null!;
     }
 
     public Task<FlightResult> GetFlightByKey(string flightKey)
     {
-        return Task.FromResult(_flights.FirstOrDefault(w => w.FlightKey == flightKey));
+        return Task.FromResult(_flights!.FirstOrDefault(w => w.FlightKey == flightKey, default!));
     }
 
     public Task<List<FlightResult>> GetFlights(FlightRequest flightRq)
     {
-        var flig = _flights.Where(w => w.FlightDate.Date == flightRq.FlightDate.Date && flightRq.Origin == w.Origin && w.Destination == flightRq.Destination).ToList();
+        var flig = _flights!.Where(w => w.FlightDate.Date == flightRq.FlightDate.Date && flightRq.Origin == w.Origin && w.Destination == flightRq.Destination).ToList();
 
         var hasADT = flightRq.PaxType.Any(a => a.Type == PassengerType.Adult);
         var hasCHD = flightRq.PaxType.Any(a => a.Type == PassengerType.Child);
