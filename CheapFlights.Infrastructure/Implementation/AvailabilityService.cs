@@ -48,15 +48,9 @@ public class AvailabilityService : IAvailabilityService
 
     public Task<List<FlightResult>> GetFlights(FlightRequest flightRq)
     {
-        var flig = _flights!.Where(w => w.FlightDate.Date == flightRq.FlightDate.Date && flightRq.Origin == w.Origin && w.Destination == flightRq.Destination).ToList();
-
-        var hasADT = flightRq.PaxType.Any(a => a.Type == PassengerType.Adult);
-        var hasCHD = flightRq.PaxType.Any(a => a.Type == PassengerType.Child);
-
-        if (!hasADT)
-            flig.ForEach(f => f.PaxPrice = f.PaxPrice.Where(w => w.Type != PassengerType.Adult).ToList());
-        if (!hasCHD)
-            flig.ForEach(f => f.PaxPrice = f.PaxPrice.Where(w => w.Type != PassengerType.Child).ToList());
+        var flig = _flights!.Where(w => w.FlightDate.Date == flightRq.FlightDate.Date && 
+        flightRq.Origin == w.Origin && 
+        (flightRq.Destination != string.Empty ? w.Destination == flightRq.Destination : true)).ToList();
 
         return Task.FromResult(flig);
     }

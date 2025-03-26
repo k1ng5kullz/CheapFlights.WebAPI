@@ -14,7 +14,7 @@ namespace CheapFlights.Infrastructure.Cache
         {
             var cachedLazy = objectCache.Get(key) as Lazy<T>;
 
-            entry = cachedLazy != null ? cachedLazy.Value : default(T);
+            entry = cachedLazy != null ? cachedLazy.Value : default!;
         }
 
     }
