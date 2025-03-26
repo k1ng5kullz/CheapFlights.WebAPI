@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
-using CheapFlights.Application.Contracts;
 using CheapFlights.Application.DTOs;
+using CheapFlights.Domain.Constants;
+using CheapFlights.Domain.Contracts;
 using CheapFlights.Domain.Models;
 using Moq;
 
@@ -21,29 +22,29 @@ namespace CheapFlights.Application.Implementation
             this._mapper = new Mock<IMapper>();
         }
 
-        private FlightService CreateService(Mapper mapperConfig)
+        private FlightService CreateService()
         {
             return new FlightService(
                 _availabilityService.Object,
                 _bookingService.Object,
-                mapperConfig ?? _mapper.Object);
+                _mapper.Object);
         }
 
         [Test]
-        public void CreateBooking_ShouldReturnBookingResult()
+        public async Task CreateBooking_ShouldReturnBookingResult()
         {
             // Arrange
-            var service = this.CreateService(null);
+            var service = CreateService();
             var date = DateTime.Now;
-            var request = new BookingRequest("flightKey", new List<Passenger>(), new Contact("John", "Dow", ""));
-            var bookingResultDto = new BookingResultDto(date, "Origin", "Destination", "FlightNumber", new List<PassengerDto>(), new ContactDto("", "", ""), date, "BookingId", 100);
-            var expectedBookingResult = new BookingResult(date, "Origin", "Destination", "FlightNumber", new List<Passenger>(), new Contact("", "", ""), date, "BookingId", 100);
+            var request = new BookingRequestDto("11", new List<PassengerDto>(), new ContactDto("John", "Dow", ""));
+            var bookingResult = new BookingResult(date, "Origin", "Destination", "FlightNumber", new List<Passenger>(), new Contact("", "", ""), date, "BookingId", 100);
+            var expectedBookingResult = new BookingResultDto(date, "Origin", "Destination", "FlightNumber", new List<PassengerDto>(), new ContactDto("", "", ""), date, "BookingId", 100);
 
-            _bookingService.Setup(x => x.CreateBooking(It.IsAny<BookingRequestDto>())).Returns(bookingResultDto);
-            _mapper.Setup(m => m.Map<BookingResult>(bookingResultDto)).Returns(expectedBookingResult);
+            _bookingService.Setup(x => x.CreateBooking(It.IsAny<BookingRequest>())).Returns(Task.FromResult(bookingResult));
+            _mapper.Setup(m => m.Map<BookingResultDto>(bookingResult)).Returns(expectedBookingResult);
 
             // Act
-            var result = service.CreateBooking(request);
+            var result = await service.CreateBooking(request);
 
             // Assert
             Assert.IsNotNull(result);
@@ -51,44 +52,34 @@ namespace CheapFlights.Application.Implementation
         }
 
         [Test]
-        public void GetFlights_ShouldReturnListOfFlightResults()
+        public async Task GetFlights_ShouldReturnListOfFlightResults()
         {
-            // Arrange
-            //var config = new MapperConfiguration(config =>
-            //{
-            //    config.CreateMap<Passenger, PassengerDto>().ReverseMap();
-            //    config.CreateMap<Contact, ContactDto>().ReverseMap();
-            //    config.CreateMap<BookingRequest, BookingRequestDto>().ReverseMap();
-            //    config.CreateMap<BookingResult, BookingResultDto>().ReverseMap();
-            //    config.CreateMap<PaxPrice, PaxPriceDto>().ReverseMap();
-            //    config.CreateMap<FlightResult, FlightResultDto>().ReverseMap();
-            //});
-            //var mapper = new Mapper(config);
-            var service = this.CreateService(null);
+            // Arrange         
+            var service = CreateService();
             var date = DateTime.Now;
-            var request = new FlightRequest(date, "Origin", "Destination", new List<PaxType>
+            var request = new FlightRequestDto(date, "Origin", "Destination", new List<PaxTypeDto>
             {
-                new PaxType("ADT", 1),
+                new PaxTypeDto(PassengerType.Adult, 1),
             });
-            var flightResultDtoList = new List<FlightResultDto>
-            {
-                new FlightResultDto("flightKey1", "FlightNumber1", date, "Origin", "Destination", new List<PaxPriceDto>()),
-                new FlightResultDto("flightKey2", "FlightNumber2", date, "Origin", "Destination", new List<PaxPriceDto>())
-            };
-            var expectedFlightResultList = new List<FlightResult>
+            var flightResultList = new List<FlightResult>
             {
                 new FlightResult("flightKey1", "FlightNumber1", date, "Origin", "Destination", new List<PaxPrice>()),
                 new FlightResult("flightKey2", "FlightNumber2", date, "Origin", "Destination", new List<PaxPrice>())
             };
-
-            _availabilityService.Setup(x => x.GetFlights(It.IsAny<FlightRequestDto>())).Returns(flightResultDtoList);
-            for (int i = 0; i < flightResultDtoList.Count; i++)
+            var expectedFlightResultList = new List<FlightResultDto>
             {
-                _mapper.Setup(m => m.Map<FlightResult>(flightResultDtoList[i])).Returns(expectedFlightResultList[i]);
+                new FlightResultDto("flightKey1", "FlightNumber1", date, "Origin", "Destination", new List<PaxPriceDto>()),
+                new FlightResultDto("flightKey2", "FlightNumber2", date, "Origin", "Destination", new List<PaxPriceDto>())
+            };
+
+            _availabilityService.Setup(x => x.GetFlights(It.IsAny<FlightRequest>())).Returns(Task.FromResult(flightResultList));
+            for (int i = 0; i < flightResultList.Count; i++)
+            {
+                _mapper.Setup(m => m.Map<FlightResultDto>(flightResultList[i])).Returns(expectedFlightResultList[i]);
             }
 
             // Act
-            var result = service.GetFlights(request);
+            var result = await service.GetFlights(request);
 
             // Assert
             Assert.IsNotNull(result);
@@ -99,20 +90,20 @@ namespace CheapFlights.Application.Implementation
         }
 
         [Test]
-        public void RetrieveBooking_ShouldReturnBookingResult()
+        public async Task RetrieveBooking_ShouldReturnBookingResult()
         {
             // Arrange
-            var service = this.CreateService(null);
+            var service = CreateService();
             var date = DateTime.Now;
-            var request = new RetrieveBookingRequest("BookingId", "");
-            var bookingResultDto = new BookingResultDto(date, "Origin", "Destination", "FlightNumber", new List<PassengerDto>(), new ContactDto("", "", ""), date, "BookingId", 100);
-            var expectedBookingResult = new BookingResult(date, "Origin", "Destination", "FlightNumber", new List<Passenger>(), new Contact("", "", ""), date, "BookingId", 100);
+            var request = new RetrieveBookingRequestDto("BookingId", "");
+            var bookingResult = new BookingResult(date, "Origin", "Destination", "FlightNumber", new List<Passenger>(), new Contact("", "", ""), date, "BookingId", 100);
+            var expectedBookingResult = new BookingResultDto(date, "Origin", "Destination", "FlightNumber", new List<PassengerDto>(), new ContactDto("", "", ""), date, "BookingId", 100);
 
-            _bookingService.Setup(x => x.RetrieveBooking(It.IsAny<RetrieveBookingRequestDto>())).Returns(bookingResultDto);
-            _mapper.Setup(m => m.Map<BookingResult>(bookingResultDto)).Returns(expectedBookingResult);
+            _bookingService.Setup(x => x.RetrieveBooking(It.IsAny<RetrieveBookingRequest>())).Returns(Task.FromResult(bookingResult));
+            _mapper.Setup(m => m.Map<BookingResultDto>(bookingResult)).Returns(expectedBookingResult);
 
             // Act
-            var result = service.RetrieveBooking(request);
+            var result = await service.RetrieveBooking(request);
 
             // Assert
             Assert.IsNotNull(result);

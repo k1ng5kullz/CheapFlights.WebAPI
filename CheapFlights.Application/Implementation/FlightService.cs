@@ -1,8 +1,8 @@
-﻿using CheapFlights.Domain.Models;
-using CheapFlights.Domain.Contracts;
-using AutoMapper;
+﻿using AutoMapper;
 using CheapFlights.Application.DTOs;
 using CheapFlights.Application.Contracts;
+using CheapFlights.Domain.Contracts;
+using CheapFlights.Domain.Models;
 
 namespace CheapFlights.Application.Implementation;
 
@@ -19,23 +19,23 @@ public class FlightService : IFlightService
         _mapper = mapper;
     }
 
-    public async Task<BookingResult> CreateBooking(BookingRequest request)
+    public async Task<BookingResultDto> CreateBooking(BookingRequestDto request)
     {
-        var result = await _bookingService.CreateBooking(_mapper.Map<BookingRequestDto>(request));
-        return _mapper.Map<BookingResult>(result);
+        var result = await _bookingService.CreateBooking(_mapper.Map<BookingRequest>(request));
+        return _mapper.Map<BookingResultDto>(result);
     }
 
-    public async Task<List<FlightResult>> GetFlights(FlightRequest request)
+    public async Task<List<FlightResultDto>> GetFlights(FlightRequestDto request)
     {
-        var flights = await _availabilityService.GetFlights(_mapper.Map<FlightRequestDto>(request));
+        var flights = await _availabilityService.GetFlights(_mapper.Map<FlightRequest>(request));
 
-        return flights.Select(_mapper.Map<FlightResult>).ToList();
+        return flights.Select(_mapper.Map<FlightResultDto>).ToList();
     }
 
-    public async Task<BookingResult> RetrieveBooking(RetrieveBookingRequest request)
+    public async Task<BookingResultDto> RetrieveBooking(RetrieveBookingRequestDto request)
     {
-        var booking = await _bookingService.RetrieveBooking(_mapper.Map<RetrieveBookingRequestDto>(request));
+        var booking = await _bookingService.RetrieveBooking(_mapper.Map<RetrieveBookingRequest>(request));
 
-        return _mapper.Map<BookingResult>(booking);
+        return _mapper.Map<BookingResultDto>(booking);
     }
 }

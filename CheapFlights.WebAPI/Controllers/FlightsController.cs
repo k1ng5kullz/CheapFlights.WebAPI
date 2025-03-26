@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using CheapFlights.Domain.Models;
-using CheapFlights.Domain.Contracts;
+using CheapFlights.Application.Contracts;
+using CheapFlights.Application.DTOs;
 
 namespace CheapFlights.WebAPI.Controllers;
 
@@ -15,24 +15,24 @@ public class FlightsController : ControllerBase
         _flightService = flightService;
     }
 
-    [HttpGet("availability")]
-    public async Task<ActionResult<IEnumerable<FlightResult>>> GetFlightsAvailability(FlightRequest request)
+    [HttpPost("availability")]
+    public async Task<ActionResult<IEnumerable<FlightResultDto>>> GetFlightsAvailability(FlightRequestDto request)
     {
         var flights = await _flightService.GetFlights(request);
         return Ok(flights);
     }
 
     [HttpPost("booking")]
-    public async Task<ActionResult<BookingResult>> CreateBooking(BookingRequest request)
+    public async Task<ActionResult<BookingResultDto>> CreateBooking(BookingRequestDto request)
     {
         var availability = await Task.Run(() => _flightService.CreateBooking(request));
         return Ok(availability);
     }
 
     [HttpGet("retrieve({bookingId}/{contactEmail}")]
-    public async Task<ActionResult<BookingResult>> Retrieve(string bookingId, string contactEmail)
+    public async Task<ActionResult<BookingResultDto>> Retrieve(string bookingId, string contactEmail)
     {
-        var booking = await Task.Run(() => _flightService.RetrieveBooking(new RetrieveBookingRequest(bookingId, contactEmail)));
+        var booking = await Task.Run(() => _flightService.RetrieveBooking(new RetrieveBookingRequestDto(bookingId, contactEmail)));
         return Ok(booking);
     }
 

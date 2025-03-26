@@ -1,8 +1,9 @@
-﻿using CheapFlights.Application.Contracts;
-using CheapFlights.Application.DTOs;
+﻿using CheapFlights.Domain.Contracts;
+using CheapFlights.Domain.Constants;
 using CheapFlights.Infrastructure.Cache;
 using CheapFlights.Infrastructure.Implementation;
 using Moq;
+using CheapFlights.Domain.Models;
 
 namespace CheapFlights.Application.Implementation
 {
@@ -22,28 +23,28 @@ namespace CheapFlights.Application.Implementation
         }
 
         [Test]
-        public void CreateBooking_ShouldReturnBooking()
+        public async Task CreateBooking_ShouldReturnBooking()
         {
             // Arrange
-            var passengers = new List<PassengerDto>
+            var passengers = new List<Passenger>
             {
-                new PassengerDto("John", "Doe", new DateTime(1990, 1, 1))
+                new Passenger("John", "Doe", new DateTime(1990, 1, 1))
             };
-            var bookingRq = new BookingRequestDto("FL123", passengers,
-                 new ContactDto("John", "Doe", "john.doe@example.com"));
+            var bookingRq = new BookingRequest("FL123", passengers,
+                 new Contact("John", "Doe", "john.doe@example.com"));
 
-            var flight = new FlightResultDto("FL123",
+            var flight = new FlightResult("FL123",
                 "FL123",
                 DateTime.UtcNow,
                 "Origin",
                 "Destination",
-                    new List<PaxPriceDto> { new PaxPriceDto("ADT", 100), new PaxPriceDto("CHL", 100) }
+                    new List<PaxPrice> { new PaxPrice(PassengerType.Adult, 100), new PaxPrice(PassengerType.Child, 100) }
                 );
 
-            _availabilityService.Setup(a => a.GetFlightByKey(It.IsAny<string>())).Returns(flight);
+            _availabilityService.Setup(a => a.GetFlightByKey(It.IsAny<string>())).Returns(Task.FromResult(flight));
 
             // Act
-            var result = _bookingService.CreateBooking(bookingRq);
+            var result = await _bookingService.CreateBooking(bookingRq);
 
 
             // Assert
@@ -62,20 +63,20 @@ namespace CheapFlights.Application.Implementation
         }
 
         [Test]
-        public void RetrieveBooking_ShouldReturnBooking()
+        public async Task RetrieveBooking_ShouldReturnBooking()
         {
             // Arrange
-            var retrieveBookingRq = new RetrieveBookingRequestDto("BK123", "john.doe@example.com");
+            var retrieveBookingRq = new RetrieveBookingRequest("BK123", "john.doe@example.com");
 
 
-            var booking = new BookingResultDto(DateTime.Today, "BCN", "AMS", "BK123", new List<PassengerDto> {
-                new PassengerDto("John","Doe",new DateTime(1990,1,1))
-            }, new ContactDto("John", "Doe", "john.doe@example.com"), DateTime.Today, "BK123", 100);
+            var booking = new BookingResult(DateTime.Today, "BCN", "AMS", "BK123", new List<Passenger> {
+                new Passenger("John","Doe",new DateTime(1990,1,1))
+            }, new Contact("John", "Doe", "john.doe@example.com"), DateTime.Today, "BK123", 100);
 
-            _cacheService.Setup(c => c.RetrieveBooking(It.IsAny<RetrieveBookingRequestDto>())).Returns(booking);
+            _cacheService.Setup(c => c.RetrieveBooking(It.IsAny<RetrieveBookingRequest>())).Returns(booking);
 
             // Act
-            var result = _bookingService.RetrieveBooking(retrieveBookingRq);
+            var result = await _bookingService.RetrieveBooking(retrieveBookingRq);
 
             // Assert
             Assert.NotNull(result);

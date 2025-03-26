@@ -1,4 +1,4 @@
-﻿using CheapFlights.Application.DTOs;
+﻿using CheapFlights.Domain.Models;
 using System.Diagnostics;
 using System.Runtime.Caching;
 
@@ -13,13 +13,13 @@ namespace CheapFlights.Infrastructure.Cache
             Cache = new MemoryCache("BookingCache");
         }
 
-        public BookingResultDto RetrieveBooking(RetrieveBookingRequestDto request)
+        public BookingResult RetrieveBooking(RetrieveBookingRequest request)
         {
-            BookingResultDto? result = default;
+            BookingResult? result = default;
             try
             {
                 var key = $"{request.BookingId}{request.ContactEmail}";
-                CacheRepository.TryGet<BookingResultDto>(Cache, key, out result);
+                CacheRepository.TryGet<BookingResult>(Cache, key, out result);
             }
             catch (Exception ex)
             {
@@ -30,7 +30,7 @@ namespace CheapFlights.Infrastructure.Cache
         }
 
 
-        public void AddBooking(BookingResultDto bookingRs)
+        public void AddBooking(BookingResult bookingRs)
         {
             try
             {

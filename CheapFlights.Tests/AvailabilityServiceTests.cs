@@ -1,5 +1,6 @@
-﻿using CheapFlights.Application.Contracts;
-using CheapFlights.Application.DTOs;
+﻿using CheapFlights.Domain.Models;
+using CheapFlights.Domain.Contracts;
+using CheapFlights.Domain.Constants;
 using Moq;
 
 namespace CheapFlights.Application.Implementation
@@ -23,20 +24,20 @@ namespace CheapFlights.Application.Implementation
         }
 
         [Test]
-        public void GetFlightByKey_ShouldReturnAFlight()
+        public async Task GetFlightByKey_ShouldReturnAFlight()
         {
             // Arrange
             var service = this.CreateService();
             string flightKey = "testKey";
-            var expectedFlight = new FlightResultDto(flightKey, "", DateTime.Today, "", "", new List<PaxPriceDto>
+            var expectedFlight = new FlightResult(flightKey, "", DateTime.Today, "", "", new List<PaxPrice>
             {
-                new PaxPriceDto("ADT", 100),
-                new PaxPriceDto("CHD", 50)
+                new PaxPrice(PassengerType.Adult, 100),
+                new PaxPrice(PassengerType.Child, 50)
             });
-            _availabilityServiceMock.Setup(x => x.GetFlightByKey(flightKey)).Returns(expectedFlight);
+            _availabilityServiceMock.Setup(x => x.GetFlightByKey(flightKey)).Returns(Task.FromResult(expectedFlight));
 
             // Act
-            var result = service.GetFlightByKey(flightKey);
+            var result = await service.GetFlightByKey(flightKey);
 
             // Assert
             Assert.IsNotNull(result);
@@ -44,32 +45,32 @@ namespace CheapFlights.Application.Implementation
         }
 
         [Test]
-        public void GetFlights_ShouldReturnTheListOfFlights()
+        public async Task GetFlights_ShouldReturnTheListOfFlights()
         {
             // Arrange
             var service = this.CreateService();
-            var flightRq = new FlightRequestDto(DateTime.Today, "NYC", "LAX", new List<PaxTypeDto>
+            var flightRq = new FlightRequest(DateTime.Today, "NYC", "LAX", new List<PaxType>
             {
-                new PaxTypeDto("ADT", 100),
-                new PaxTypeDto("CHD", 50)
+                new PaxType(PassengerType.Adult, 100),
+                new PaxType(PassengerType.Child, 50)
             }); ;
-            var expectedFlights = new List<FlightResultDto>
+            var expectedFlights = new List<FlightResult>
             {
-                new FlightResultDto("flight1","",DateTime.Now,"","",new List<PaxPriceDto>
+                new FlightResult("flight1","",DateTime.Now,"","",new List<PaxPrice>
                 {
-                    new PaxPriceDto("ADT", 100),
-                    new PaxPriceDto("CHL", 100),
+                    new PaxPrice(PassengerType.Adult, 100),
+                    new PaxPrice(PassengerType.Child, 100),
                 }),
-                new FlightResultDto("flight2","",DateTime.Now,"","",new List<PaxPriceDto>
+                new FlightResult("flight2","",DateTime.Now,"","",new List<PaxPrice>
                 {
-                    new PaxPriceDto("ADT", 100),
-                    new PaxPriceDto("CHL", 100),
+                    new PaxPrice(PassengerType.Adult, 100),
+                    new PaxPrice(PassengerType.Child, 100),
                 }),
             };
-            _availabilityServiceMock.Setup(x => x.GetFlights(flightRq)).Returns(expectedFlights);
+            _availabilityServiceMock.Setup(x => x.GetFlights(flightRq)).Returns(Task.FromResult(expectedFlights));
 
             // Act
-            var result = service.GetFlights(flightRq);
+            var result = await service.GetFlights(flightRq);
 
             // Assert
             Assert.IsNotNull(result);

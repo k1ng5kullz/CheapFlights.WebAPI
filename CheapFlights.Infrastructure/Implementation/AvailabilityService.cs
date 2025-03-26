@@ -1,14 +1,15 @@
 ﻿using CheapFlights.Application.DTOs;
-using CheapFlights.Application.Contracts;
+using CheapFlights.Domain.Contracts;
 using Newtonsoft.Json;
 using System.Reflection;
 using CheapFlights.Domain.Constants;
+using CheapFlights.Domain.Models;
 
 namespace CheapFlights.Infrastructure.Implementation;
 
 public class AvailabilityService : IAvailabilityService
 {
-    private List<FlightResultDto> _flights;
+    private List<FlightResult> _flights;
 
     public AvailabilityService()
     {
@@ -22,7 +23,7 @@ public class AvailabilityService : IAvailabilityService
         var fileSettings = ".data.flights.json";
 
         var pathConfigfile = string.Concat(assembly.GetName().Name, fileSettings);
-        _flights = JsonConvert.DeserializeObject<List<FlightResultDto>>(GetAssemblyFile(pathConfigfile));
+        _flights = JsonConvert.DeserializeObject<List<FlightResult>>(GetAssemblyFile(pathConfigfile));
     }
 
     private static string GetAssemblyFile(string resource)
@@ -40,12 +41,12 @@ public class AvailabilityService : IAvailabilityService
         return null;
     }
 
-    public Task<FlightResultDto> GetFlightByKey(string flightKey)
+    public Task<FlightResult> GetFlightByKey(string flightKey)
     {
         return Task.FromResult(_flights.FirstOrDefault(w => w.FlightKey == flightKey));
     }
 
-    public Task<List<FlightResultDto>> GetFlights(FlightRequestDto flightRq)
+    public Task<List<FlightResult>> GetFlights(FlightRequest flightRq)
     {
         var flig = _flights.Where(w => w.FlightDate.Date == flightRq.FlightDate.Date && flightRq.Origin == w.Origin && w.Destination == flightRq.Destination).ToList();
 

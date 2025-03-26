@@ -12,7 +12,9 @@ builder.Services.AddSingleton<ICacheService, CacheService>();
 builder.Services.AddTransient<IBookingService, BookingService>();
 builder.Services.AddTransient<IAvailabilityService, AvailabilityService>();
 builder.Services.AddTransient<IFlightService, FlightService>();
-builder.Services.AddControllers().AddNewtonsoftJson();
+builder.Services.AddControllers()
+    .AddDataAnnotationsLocalization()
+    .AddNewtonsoftJson();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

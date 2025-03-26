@@ -1,6 +1,6 @@
 ﻿using CheapFlights.Infrastructure.Cache;
-using CheapFlights.Application.DTOs;
-using CheapFlights.Application.Contracts;
+using CheapFlights.Domain.Contracts;
+using CheapFlights.Domain.Models;
 
 namespace CheapFlights.Infrastructure.Implementation;
 
@@ -25,7 +25,7 @@ public class BookingService : IBookingService
             .Select(s => s[random.Next(s.Length)]).ToArray());
     }
 
-    public async Task<BookingResultDto> CreateBooking(BookingRequestDto request)
+    public async Task<BookingResult> CreateBooking(BookingRequest request)
     {
         var flight = await _availabilityService.GetFlightByKey(request.FlightKey);
 
@@ -34,7 +34,7 @@ public class BookingService : IBookingService
 
         decimal price = (adults * flight.PaxPrice[0].Price) + (childs * flight.PaxPrice[1].Price);
 
-        var booking = new BookingResultDto(flight.FlightDate,
+        var booking = new BookingResult(flight.FlightDate,
             flight.Origin,
             flight.Destination,
             flight.FlightNumber,
@@ -49,7 +49,7 @@ public class BookingService : IBookingService
         return booking;
     }
 
-    public Task<BookingResultDto> RetrieveBooking(RetrieveBookingRequestDto request)
+    public Task<BookingResult> RetrieveBooking(RetrieveBookingRequest request)
     {
         return Task.FromResult(_cacheService.RetrieveBooking(request));
     }
