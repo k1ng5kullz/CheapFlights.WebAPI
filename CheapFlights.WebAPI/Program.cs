@@ -3,23 +3,35 @@ using CheapFlights.Application.Contracts;
 using CheapFlights.Application.Implementation;
 using CheapFlights.Infrastructure.Implementation;
 using CheapFlights.Infrastructure.Cache;
+using Autofac.Extensions.DependencyInjection;
+using Autofac;
 
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddSingleton<ICacheService, CacheService>();
-builder.Services.AddTransient<IBookingService, BookingService>();
-builder.Services.AddTransient<IAvailabilityService, AvailabilityService>();
-builder.Services.AddTransient<IFlightService, FlightService>();
-builder.Services.AddControllers()
-    .AddDataAnnotationsLocalization()
-    .AddNewtonsoftJson();
+// Logging
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddAutoMapper(typeof(Program));
+
+// Add services to the container.
+builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
+builder.Services.AddControllers()
+    .AddDataAnnotationsLocalization()
+    .AddNewtonsoftJson();
+
+builder.Host.ConfigureContainer<ContainerBuilder>(ContainerBuilder =>
+{
+    ContainerBuilder.RegisterType<CacheService>().As<ICacheService>().SingleInstance();
+    ContainerBuilder.RegisterType<BookingService>().As<IBookingService>();
+    ContainerBuilder.RegisterType<AvailabilityService>().As<IAvailabilityService>();
+    ContainerBuilder.RegisterType<FlightService>().As<IFlightService>();
+});
+
 
 var app = builder.Build();
 
