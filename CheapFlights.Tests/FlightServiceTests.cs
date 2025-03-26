@@ -17,9 +17,9 @@ namespace CheapFlights.Application.Implementation
         [SetUp]
         public void SetUp()
         {
-            this._availabilityService = new Mock<IAvailabilityService>();
-            this._bookingService = new Mock<IBookingService>();
-            this._mapper = new Mock<IMapper>();
+            _availabilityService = new Mock<IAvailabilityService>();
+            _bookingService = new Mock<IBookingService>();
+            _mapper = new Mock<IMapper>();
         }
 
         private FlightService CreateService()

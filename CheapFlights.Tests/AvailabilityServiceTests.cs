@@ -27,7 +27,7 @@ namespace CheapFlights.Application.Implementation
         public async Task GetFlightByKey_ShouldReturnAFlight()
         {
             // Arrange
-            var service = this.CreateService();
+            var service = CreateService();
             string flightKey = "testKey";
             var expectedFlight = new FlightResult(flightKey, "", DateTime.Today, "", "", new List<PaxPrice>
             {
@@ -48,7 +48,7 @@ namespace CheapFlights.Application.Implementation
         public async Task GetFlights_ShouldReturnTheListOfFlights()
         {
             // Arrange
-            var service = this.CreateService();
+            var service = CreateService();
             var flightRq = new FlightRequest(DateTime.Today, "NYC", "LAX", new List<PaxType>
             {
                 new PaxType(PassengerType.Adult, 100),
