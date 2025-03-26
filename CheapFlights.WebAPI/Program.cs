@@ -6,7 +6,6 @@ using CheapFlights.Infrastructure.Cache;
 using Autofac.Extensions.DependencyInjection;
 using Autofac;
 
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Logging
