@@ -2,6 +2,7 @@
 using CheapFlights.Application.Contracts;
 using Newtonsoft.Json;
 using System.Reflection;
+using CheapFlights.Domain.Constants;
 
 namespace CheapFlights.Infrastructure.Implementation;
 
@@ -39,23 +40,23 @@ public class AvailabilityService : IAvailabilityService
         return null;
     }
 
-    public FlightResultDto GetFlightByKey(string flightKey)
+    public Task<FlightResultDto> GetFlightByKey(string flightKey)
     {
-        return _flights.FirstOrDefault(w => w.FlightKey == flightKey);
+        return Task.FromResult(_flights.FirstOrDefault(w => w.FlightKey == flightKey));
     }
 
-    public List<FlightResultDto> GetFlights(FlightRequestDto flightRq)
+    public Task<List<FlightResultDto>> GetFlights(FlightRequestDto flightRq)
     {
         var flig = _flights.Where(w => w.FlightDate.Date == flightRq.FlightDate.Date && flightRq.Origin == w.Origin && w.Destination == flightRq.Destination).ToList();
 
-        var hasADT = flightRq.PaxType.Any(a => a.Type == "ADT");
-        var hasCHD = flightRq.PaxType.Any(a => a.Type == "CHD");
+        var hasADT = flightRq.PaxType.Any(a => a.Type == PassengerType.Adult);
+        var hasCHD = flightRq.PaxType.Any(a => a.Type == PassengerType.Child);
 
         if (!hasADT)
-            flig.ForEach(f => f.PaxPrice = f.PaxPrice.Where(w => w.Type != "ADT").ToList());
+            flig.ForEach(f => f.PaxPrice = f.PaxPrice.Where(w => w.Type != PassengerType.Adult).ToList());
         if (!hasCHD)
-            flig.ForEach(f => f.PaxPrice = f.PaxPrice.Where(w => w.Type != "CHD").ToList());
+            flig.ForEach(f => f.PaxPrice = f.PaxPrice.Where(w => w.Type != PassengerType.Child).ToList());
 
-        return flig;
+        return Task.FromResult(flig);
     }
 }

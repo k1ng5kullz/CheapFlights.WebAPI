@@ -15,15 +15,15 @@ public class FlightsController : ControllerBase
         _flightService = flightService;
     }
 
-    [HttpPost("availability")]
-    public async Task<ActionResult<IEnumerable<FlightResult>>> Get(FlightRequest request)
+    [HttpGet("availability")]
+    public async Task<ActionResult<IEnumerable<FlightResult>>> GetFlightsAvailability(FlightRequest request)
     {
-        var flights = await Task.Run(() => _flightService.GetFlights(request));
+        var flights = await _flightService.GetFlights(request);
         return Ok(flights);
     }
 
     [HttpPost("booking")]
-    public async Task<ActionResult<BookingResult>> Availability(BookingRequest request)
+    public async Task<ActionResult<BookingResult>> CreateBooking(BookingRequest request)
     {
         var availability = await Task.Run(() => _flightService.CreateBooking(request));
         return Ok(availability);

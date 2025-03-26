@@ -19,22 +19,22 @@ public class FlightService : IFlightService
         _mapper = mapper;
     }
 
-    public BookingResult CreateBooking(BookingRequest request)
+    public async Task<BookingResult> CreateBooking(BookingRequest request)
     {
-        var result = _bookingService.CreateBooking(_mapper.Map<BookingRequestDto>(request));
+        var result = await _bookingService.CreateBooking(_mapper.Map<BookingRequestDto>(request));
         return _mapper.Map<BookingResult>(result);
     }
 
-    public List<FlightResult> GetFlights(FlightRequest request)
+    public async Task<List<FlightResult>> GetFlights(FlightRequest request)
     {
-        var flights = _availabilityService.GetFlights(_mapper.Map<FlightRequestDto>(request));
+        var flights = await _availabilityService.GetFlights(_mapper.Map<FlightRequestDto>(request));
 
         return flights.Select(_mapper.Map<FlightResult>).ToList();
     }
 
-    public BookingResult RetrieveBooking(RetrieveBookingRequest request)
+    public async Task<BookingResult> RetrieveBooking(RetrieveBookingRequest request)
     {
-        var booking = _bookingService.RetrieveBooking(_mapper.Map<RetrieveBookingRequestDto>(request));
+        var booking = await _bookingService.RetrieveBooking(_mapper.Map<RetrieveBookingRequestDto>(request));
 
         return _mapper.Map<BookingResult>(booking);
     }

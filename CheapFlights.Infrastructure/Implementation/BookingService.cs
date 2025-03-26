@@ -25,9 +25,9 @@ public class BookingService : IBookingService
             .Select(s => s[random.Next(s.Length)]).ToArray());
     }
 
-    public BookingResultDto CreateBooking(BookingRequestDto request)
+    public async Task<BookingResultDto> CreateBooking(BookingRequestDto request)
     {
-        var flight = _availabilityService.GetFlightByKey(request.FlightKey);
+        var flight = await _availabilityService.GetFlightByKey(request.FlightKey);
 
         int adults = request.Passengers.Count(passenger => (DateTime.Today.Year - passenger.DateOfBirth.Year) > 16 && passenger.FirstName != string.Empty);
         int childs = request.Passengers.Count(passenger => (DateTime.Today.Year - passenger.DateOfBirth.Year) < 16 && passenger.FirstName != string.Empty);
@@ -49,8 +49,8 @@ public class BookingService : IBookingService
         return booking;
     }
 
-    public BookingResultDto RetrieveBooking(RetrieveBookingRequestDto request)
+    public Task<BookingResultDto> RetrieveBooking(RetrieveBookingRequestDto request)
     {
-        return _cacheService.RetrieveBooking(request);
+        return Task.FromResult(_cacheService.RetrieveBooking(request));
     }
 }
