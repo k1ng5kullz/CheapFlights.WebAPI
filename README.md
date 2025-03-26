@@ -36,7 +36,7 @@ Uso Autofac como DI, NUnit y Moq para las pruebas unitarias.
 
 ## 📦 Dependencias Externas
 
-- [ ] Redis
+- [ ] ~Redis~ (no implementado)
 
 ## 🚀 Integración y Despliegue
 
