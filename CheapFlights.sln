@@ -21,6 +21,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheapFlights.Application", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheapFlights.Domain", "CheapFlights.Domain\CheapFlights.Domain.csproj", "{CBAEC0A5-751E-4FDF-AF53-EDC4BE5BF3AD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheapFlights.Tests", "CheapFlights.Tests\CheapFlights.Tests.csproj", "{B4F290D3-ABF7-4154-8C0F-261C1DF9E3B7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{252CC083-01DF-4A1C-ABD0-28B6F228E4C9} = {252CC083-01DF-4A1C-ABD0-28B6F228E4C9}
+		{81E6B035-4115-4F0E-A57F-7C94FA310774} = {81E6B035-4115-4F0E-A57F-7C94FA310774}
+		{CBAEC0A5-751E-4FDF-AF53-EDC4BE5BF3AD} = {CBAEC0A5-751E-4FDF-AF53-EDC4BE5BF3AD}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +50,10 @@ Global
 		{CBAEC0A5-751E-4FDF-AF53-EDC4BE5BF3AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBAEC0A5-751E-4FDF-AF53-EDC4BE5BF3AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBAEC0A5-751E-4FDF-AF53-EDC4BE5BF3AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4F290D3-ABF7-4154-8C0F-261C1DF9E3B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4F290D3-ABF7-4154-8C0F-261C1DF9E3B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4F290D3-ABF7-4154-8C0F-261C1DF9E3B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4F290D3-ABF7-4154-8C0F-261C1DF9E3B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
